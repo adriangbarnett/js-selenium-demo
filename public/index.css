@@ -1,0 +1,41 @@
+table, th, td {
+    border:1px solid black;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+body {
+    padding: 20px;
+}
+
+.actionButtons {
+    margin-bottom: 20px;
+}
+
+.filter {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tableIcon {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.tableRowButtons {
+    margin: 10px;
+}
+
+
+.div-box {
+    margin-top: 20px;
+    border: 1px;
+    border: solid;
+    padding: 20px;
+
+
+}

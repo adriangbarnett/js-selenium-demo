@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./include/head.ejs') %>
+    <title>Edit</title>
+    
+</head>
+<body>
+    <h1>Edit</h1>
+    <div id="divadd" class="div-box">
+        <form id="formUpdate" action="/update" method="post">
+            <input id="username" class="" type="text" name="username" placeholder="username" autocomplete="off" value="<%=username%>">
+            <input id="email" class="" name="email" type="text" placeholder="email" autocomplete="off" value="<%=email%>">
+            <input id="counter" class="" name="counter" type="number" min="0" max="9999" step="1" autocomplete="off" value="<%=counter%>">
+            <input id="image" class="" name="image" type="text"  autocomplete="off" placeholder="./img/0.png" value="<%=image%>">
+            <button id="search" class="btn btn-sm btn-success" type="submit" form="add">Save</button>
+            <a href="/" id="buttonCancel" class="btn btn-sm btn-danger">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
