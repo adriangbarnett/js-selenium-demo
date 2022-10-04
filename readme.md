@@ -14,13 +14,12 @@ If anything takes longer than 2000ms the async will time out. As you can see fro
 - Run the test:             $ npm test ./tests/selenium.js
 
 
-# Git origin
+# Git remote
 git remote add origin https://github.com/adriangbarnett/js-selenium-demo.git
 
 # Git notes
 git add .
 git commit -m "first commit"
-git branch -M main
-git push -u origin main
+git push -u origin master
 
 
