@@ -27,25 +27,20 @@ var driver = new webdriver.Builder().forBrowser("chrome").build();
 //driver.manage().setTimeouts({implicit: (10000)})
 
 
+// build in demo
+describe.skip("Navigate tests", async function() { 
 
-/* ======================================================================
-    PAGE OBJECTS
-/* ====================================================================== */
+    // Add user form
+    const input_username= By.id("inputUsername");
+    const input_email = By.id("inputEmail");
+    const input_counter = By.id("inputCounter");
+    const input_image = By.id("inputImage");
+    const button_add = By.id("buttonAdd");
 
-// Add user form
-const input_username= By.id("inputUsername");
-const input_email = By.id("inputEmail");
-const input_counter = By.id("inputCounter");
-const input_image = By.id("inputImage");
-const button_add = By.id("buttonAdd");
+    // test data
+    const baseUrl = "http://localhost:3000/";
+    const expectedUrl = "http://localhost:3000/"
 
-// test data
-const baseUrl = "http://localhost:3000/";
-const expectedUrl = "http://localhost:3000/"
-
-
-// A test suite
-describe("Navigate tests", async function() { 
 
     before(async function() { 
         //console.log("before");
